@@ -13,7 +13,7 @@ const formSchema = new Schema<FormType>({
     type: String,
     required: true,
   },
-  phoneNumber: {
+  phone: {
     type: String,
     required: true,
   },
