@@ -35,7 +35,8 @@ export const createForm = async (req: Request, res: Response) => {
     });
 
     await newForm.save();
-    
+
+    return res.status(201).json(newForm);
   } catch (error) {
     return res.status(401).json(error)
   }
