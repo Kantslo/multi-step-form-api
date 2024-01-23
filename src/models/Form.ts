@@ -36,5 +36,9 @@ const formSchema = new Schema<FormType>({
   }
 });
 
-export default model("From", formSchema);
+const Form = model("Form", formSchema);
+
+export default Form;
+
+
 
