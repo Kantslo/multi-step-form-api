@@ -3,8 +3,10 @@ import BodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from "dotenv";
 import { swaggerMiddleware } from './middlewares';
+import connect from 'config/mongo.js';
 
 dotenv.config();
+connect();
 
 const server = express();
 server.use(cors());

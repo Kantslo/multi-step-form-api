@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const connectToMongo = () => {
+const connect = () => {
   try {
     const url = process.env.MONGO_URL!;
     mongoose.connect(url)
@@ -10,4 +10,4 @@ const connectToMongo = () => {
   }
 }
 
-export default connectToMongo;
+export default connect;
