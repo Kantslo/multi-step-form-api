@@ -16,12 +16,11 @@ const addFormSchema = async (data: FormType) => {
 
   return J.object({
     name: J.string().required(),
-    email: J.string().required(),
+    email: J.string().required().custom(ifFormExists(form)),
     phoneNumber: J.string().required(),
     plan: J.string().required(),
     billing: J.string().required(),
     addons: J.string().required(),
-    id: J.string().required().custom(ifFormExists(form)),
   });
 }
 
