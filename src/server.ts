@@ -1,7 +1,10 @@
 import express from 'express';
 import BodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from "dotenv";
 import { swaggerMiddleware } from './middlewares';
+
+dotenv.config();
 
 const server = express();
 server.use(cors());
