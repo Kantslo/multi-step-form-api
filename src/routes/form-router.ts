@@ -1,4 +1,4 @@
-import { createForm } from "controllers/form-controller.js";
+import { createForm } from "../controllers/form-controller.js";
 import express from "express";
 
 const formRouter = express.Router();

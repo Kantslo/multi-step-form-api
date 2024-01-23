@@ -2,8 +2,8 @@ import express from 'express';
 import BodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from "dotenv";
-import connect from 'config/mongo.js';
-import formRouter from 'routes/form-router.js';
+import connect from './config/mongo.js';
+import formRouter from './routes/form-router.js';
 import { swaggerMiddleware } from './middlewares';
 
 dotenv.config();

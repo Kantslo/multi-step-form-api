@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import Form from "models/Form.js";
-import addFormSchema from "schemas/addFormSchema.js";
+import Form from "../models/Form.js";
+import addFormSchema from "../schemas/addFormSchema.js";
 
 
 export const createForm = async (req: Request, res: Response) => {

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 import { v4 as uuid } from 'uuid';
-import { FormType } from 'types.js';
+import { FormType } from '../types.js';
 
 const { String } = Schema.Types;
 

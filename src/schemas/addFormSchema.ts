@@ -1,5 +1,5 @@
 import J, { CustomHelpers } from 'joi';
-import { FormType } from 'types';
+import { FormType } from '../types';
 import Form from '../models/Form.js';
 
 const ifFormExists = ( form: FormType | null) => ( value: string, helpers: CustomHelpers ) => {
