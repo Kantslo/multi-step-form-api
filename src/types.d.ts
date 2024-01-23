@@ -5,7 +5,7 @@ type AddonType = "online service" | "larger storage" | "customizable profile"
 export type FormType = {
   name: string;
   email: string;
-  phoneNumber: string;
+  phone: string;
   plan: PlanType;
   billing: BillingType;
   addons: AddonType;

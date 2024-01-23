@@ -30,7 +30,7 @@ paths:
                   type: string
                 email:
                   type: string
-                phoneNumber:
+                phone:
                   type: string
                 plan:
                   type: string

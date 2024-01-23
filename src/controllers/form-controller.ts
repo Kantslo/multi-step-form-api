@@ -17,7 +17,7 @@ export const createForm = async (req: Request, res: Response) => {
       return res.status(400).json(error);
     }
 
-    const { name, email, phoneNumber, plan, billing, addons} = value;
+    const { name, email, phone, plan, billing, addons} = value;
 
     const form = await Form.findOne({ email });
 
@@ -28,7 +28,7 @@ export const createForm = async (req: Request, res: Response) => {
     const newForm = new Form({
       name,
       email,
-      phoneNumber,
+      phone,
       plan,
       billing,
       addons,
