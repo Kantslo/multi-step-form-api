@@ -3,7 +3,7 @@ import YAML from "yamljs";
 
 const options = {
   customCss: ".swagger-ui .topbar { display: none }",
-  customSiteTitle: "Parking App API",
+  customSiteTitle: "Multi Step Form",
 };
 
 const swaggerDocument = YAML.load("./src/config/swagger.yaml");
