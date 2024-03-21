@@ -1,8 +1,9 @@
-import { Schema, model } from 'mongoose';
-import { v4 as uuid } from 'uuid';
-import { FormType } from '../types.js';
+import { Schema, model } from "mongoose";
+import { v4 as uuid } from "uuid";
+import { FormType } from "../types.js";
 
 const { String } = Schema.Types;
+const { Number } = Schema.Types;
 
 const formSchema = new Schema<FormType>({
   name: {
@@ -14,7 +15,7 @@ const formSchema = new Schema<FormType>({
     required: true,
   },
   phone: {
-    type: String,
+    type: Number,
     required: true,
   },
   plan: {
@@ -33,12 +34,9 @@ const formSchema = new Schema<FormType>({
     type: String,
     required: true,
     default: uuid,
-  }
+  },
 });
 
 const Form = model("Form", formSchema);
 
 export default Form;
-
-
-
